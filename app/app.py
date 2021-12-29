@@ -48,15 +48,15 @@ def wallet(fake=False):
     )
 
 
-@application.route('/wallet')
-@requires_auth
-def wallet_real():
-    return wallet()
-
-
-@application.route('/wallet-fake')
-def wallet_fake():
-    return wallet(fake=True)
+# @application.route('/wallet')
+# @requires_auth
+# def wallet_real():
+#     return wallet()
+#
+#
+# @application.route('/wallet-fake')
+# def wallet_fake():
+#     return wallet(fake=True)
 
 
 @application.route('/resume')
