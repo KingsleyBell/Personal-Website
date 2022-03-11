@@ -6,8 +6,6 @@ services:
     hostname: web
     ports:
       - "8000:8000"
-    volumes:
-      - /home/ubuntu/tick.log:/app/tick.log
     env_file:
       - "envfile"
 networks:
